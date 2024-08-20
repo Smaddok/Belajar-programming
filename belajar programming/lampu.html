@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lampu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='lampu.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="div1">
+        <img class="lampu" id="lampu1" src="media/off.gif">
+        <img class="lampu" id="lampu2" src="media/off.gif">
+        <img class="lampu" id="lampu3" src="media/off.gif">
+        <img class="lampu" id="lampu4" src="media/off.gif">
+    </div>
+    <div class="div2">
+      <div class="button">
+        <button class="tombol" onclick="saklar1('on')">on</button>
+        <button class="tombol2" onclick="saklar1('off')">off</button>
+      </div>
+        <div class="button">
+        <button class="tombol" onclick="saklar2('on')">on</button>
+        <button class="tombol2" onclick="saklar2('off')">off</button>
+      </div>
+        <div class="button">
+        <button class="tombol" onclick="saklar3('on')">on</button>
+        <button class="tombol2" onclick="saklar3('off')">off</button>
+      </div>
+        <div class="button">
+        <button class="tombol" onclick="saklar4('on')">on</button>
+        <button class="tombol2" onclick="saklar4('off')">off</button>
+      </div>
+    </div>
+
+
+        <script>
+            function saklar1(params) {
+                console.log(params);
+
+                let lampu1 = document.getElementById("lampu1");
+                
+
+                if (params == "on") {
+                    lampu1.src = 'media/on.gif'
+                }
+                if (params == "off") {
+                    lampu1.src = 'media/off.gif'
+                }
+            }
+
+            function saklar2(params) {
+                console.log(params);
+
+                let lampu2 = document.getElementById("lampu2");
+                
+
+                if (params == "on") {
+                    lampu2.src = 'media/on.gif'
+                }
+                if (params == "off") {
+                    lampu2.src = 'media/off.gif'
+                }
+            }
+
+            function saklar3(params) {
+                console.log(params);
+
+                let lampu3 = document.getElementById("lampu3");
+                
+
+                if (params == "on") {
+                    lampu3.src = 'media/on.gif'
+                }
+                if (params == "off") {
+                    lampu3.src = 'media/off.gif'
+                }
+            }
+
+            function saklar4(params) {
+                console.log(params);
+
+                let lampu4 = document.getElementById("lampu4");
+                
+
+                if (params == "on") {
+                    lampu4.src = 'media/on.gif'
+                }
+                if (params == "off") {
+                    lampu4.src = 'media/off.gif'
+                }
+            }
+            
+         </script>
+</body>
+ 
+</html>
